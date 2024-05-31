@@ -9,46 +9,46 @@ Assessment Requirements
 */
 
 // create a variable to hold your NFT's
-const NFTS=[]
+const Niharika_NFTS=[]
 // this function will take in some values as parameters, create an
 // NFT object using the parameters passed to it for its metadata, 
 // and store it in the variable above.
-function mintNFT (_name,_eyeColor,_shirtType,_bling) {
+function mintNFT_Niharika (_name,_eyeColor,_shirtType,_bling) {
     const NFT={
         "name":_name,
         "eyeColor":_eyeColor,
         "shirtType":_shirtType,
         "bling":_bling
     }
-    NFTS.push(NFT);
+    Niharika_NFTS.push(NFT);
     console.log("Minted: " + _name);
 
 }
 
 // create a "loop" that will go through an "array" of NFT's
 // and print their metadata with console.log()
-function listNFTs () {
+function listNFTs_Niharika  () {
 
-    for(let i=0;i<NFTS.length;i++){
+    for(let i=0;i<Niharika_NFTS.length;i++){
         console.log("\nID: \t\t\t"+(i+1));
-        console.log("Name: \t\t\t"+ NFTS[i].name);
-        console.log("Eye Color: \t\t" + NFTS[i].eyeColor);
-        console.log("Shirt Type: \t\t" + NFTS[i].shirtType);
-        console.log("Bling: \t\t\t" + NFTS[i].bling);
+        console.log("Name: \t\t\t"+ Niharika_NFTS[i].name);
+        console.log("Eye Color: \t\t" + Niharika_NFTS[i].eyeColor);
+        console.log("Shirt Type: \t\t" + Niharika_NFTS[i].shirtType);
+        console.log("Bling: \t\t\t" + Niharika_NFTS[i].bling);
     }
 
 }
 
 // print the total number of NFTs we have minted to the console
-function getTotalSupply() {
-    console.log("\n"+NFTS.length);
+function getTotalSupply_Niharika () {
+    console.log("\n"+Niharika_NFTS.length);
 
 }
 
 // call your functions below this line
-mintNFT("Niharika","Black","Hoodie","Ring");
-mintNFT("Niya","Black","Hoodie","Ring");
-mintNFT("Any","Black","Hoodie","Ring");
-listNFTs();
-getTotalSupply();
+mintNFT_Niharika ("Niharika","Black","Hoodie","Ring");
+mintNFT_Niharika ("Niya","Black","Hoodie","Ring");
+mintNFT_Niharika ("Any","Black","Hoodie","Ring");
+listNFTs_Niharika ();
+getTotalSupply_Niharika ();
 
